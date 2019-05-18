@@ -20,7 +20,7 @@
   </form>
 
 <script>
-  const socket = io('https://b080a29d.ngrok.io');
+  const socket = io('https://chat-socketio-node.herokuapp.com');
 
   renderMessage = (message) => {
     $('#messages').append(`<div class="message"><strong>${message.address}: </strong>${message.newMessage}</div>`);
