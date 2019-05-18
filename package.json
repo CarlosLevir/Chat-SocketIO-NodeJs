@@ -1,11 +1,17 @@
 {
-  "name": "Chat-SocketIO-NodeJs",
+  "name": "chat-socketio-nodejs",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
   "dependencies": {
+    "cors": "^2.8.5",
     "ejs": "^2.6.1",
     "express": "^4.17.0",
+    "nodemon": "^1.19.0",
     "socket.io": "^2.2.0"
   }
 }
