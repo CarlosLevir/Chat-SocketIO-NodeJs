@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
     "ejs": "^2.6.1",
     "express": "^4.17.0",
     "nodemon": "^1.19.0",

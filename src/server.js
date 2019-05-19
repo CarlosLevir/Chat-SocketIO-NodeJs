@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const ejs = require('ejs');
+require('dotenv').config();
 
 const app = express();
 
@@ -33,4 +34,4 @@ io.on('connection', socket => {
   })
 });
 
-server.listen(3000);
+server.listen(process.env.PORT || 3000);
