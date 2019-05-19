@@ -1,7 +1,8 @@
 # Chat-SocketIO-NodeJs
+
 A simple chat built with NodeJs and SocketIO.
 
-- [Chat-SocketIO](#chat-socketio)
+- [Chat-SocketIO-NodeJs](#chat-socketio-nodejs)
   - [DEMO](#demo)
   - [Usage](#usage)
   - [Technologies](#technologies)
