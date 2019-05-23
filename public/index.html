@@ -16,6 +16,8 @@
     <div id="messages"></div>
 
     <input type="text" name="message" placeholder="Sua mensagem..." required>
+    <br>
+    <input type="text" name="ip" placeholder="IP de destino...">
     <button type="submit">Enviar</button>
   </form>
 
@@ -39,11 +41,16 @@
   $('#chat').submit(function(e) {
     e.preventDefault();
 
-    const message = $('input[name=message]').val();
+    const newMessage = $('input[name=message]').val();
+    const ip = $('input[name=ip]').val();
+    
+    data = { newMessage, ip };
+    console.log(data)
 
     $('input[name=message]').val('');
+    $('input[name=ip]').val('');
 
-    socket.emit('newMessage', message);
+    socket.emit('newMessage', data);
   });
 </script>
 </body>
